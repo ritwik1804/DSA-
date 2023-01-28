@@ -14,23 +14,7 @@ void linkedListTraversal(struct Node *head){
         ptr = ptr->next;
     }while(ptr!=head);
 }
- 
-struct Node * insertAtFirst(struct Node *head, int data){
-    struct Node * ptr = (struct Node *) malloc(sizeof(struct Node));
-    ptr->data = data;
- 
-    struct Node * p = head->next;
-    while(p->next != head){
-        p = p->next;
-    }
-    
- 
-    p->next = ptr;
-    ptr->next = head;
-    head = ptr;
-    return head;
- 
-}
+
  
 int main(){
     
